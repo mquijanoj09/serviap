@@ -4,7 +4,12 @@
  * A modern, responsive CSS implementation built from scratch.
  * Mobile-first approach supporting devices from 320px and up.
  * WCAG 2.1 AA compliant with semantic design patterns.
+ * CMS-ready with modular component architecture.
  */
+
+/* Import component styles */
+@import "gallery.css";
+@import "cards.css";
 
 /* ==========================================================================
    CSS Reset & Base Styles

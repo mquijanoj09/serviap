@@ -95,6 +95,15 @@
     modalImage.src = fullSrc;
     modalImage.alt = alt;
 
+    // Scale modal image to 110% of original size
+    const originalWidth = img.naturalWidth || img.width;
+    const originalHeight = img.naturalHeight || img.height;
+
+    modalImage.style.width = `${originalWidth * 1.3}px`;
+    modalImage.style.height = `${originalHeight * 1.3}px`;
+    modalImage.style.maxWidth = "90vw";
+    modalImage.style.maxHeight = "85vh";
+
     // Show modal
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
@@ -135,6 +144,11 @@
       if (modalImage) {
         modalImage.src = "";
         modalImage.alt = "";
+        // Reset image styles
+        modalImage.style.width = "";
+        modalImage.style.height = "";
+        modalImage.style.maxWidth = "";
+        modalImage.style.maxHeight = "";
       }
     }, 300);
   }
