@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://example.com/sitemap.xml
+
+# Important pages
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block sensitive files
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /package.json
+Disallow: /.git/

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Serviap Design Test - A modern, accessible webpage featuring responsive gallery and interactive cards components. Learn about molecular gastronomy and taste perception through visual design."
+    />
+    <meta
+      name="keywords"
+      content="gallery, cards, responsive design, accessibility, modern web design, molecular gastronomy, taste perception, cooking, food colors"
+    />
+    <meta name="author" content="Serviap Development Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Serviap Design Test - Modern Web Components"
+    />
+    <meta
+      property="og:description"
+      content="Explore molecular gastronomy and taste perception through our responsive, accessible web design featuring interactive galleries and color-themed content."
+    />
+    <meta property="og:image" content="/images/gallery.webp" />
+    <meta property="og:url" content="https://example.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Serviap Design Test - Modern Web Components"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore molecular gastronomy and taste perception through our responsive, accessible web design."
+    />
+    <meta name="twitter:image" content="/images/gallery.webp" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/gallery.css" rel="stylesheet" />
+    <link href="css/cards.css" rel="stylesheet" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Serviap Design Test - Modern Web Components",
+        "description": "A modern, accessible webpage featuring responsive gallery and interactive cards components about molecular gastronomy and taste perception.",
+        "author": {
+          "@type": "Organization",
+          "name": "Serviap Development Team"
+        },
+        "mainEntity": {
+          "@type": "Article",
+          "headline": "What Does Cooking Mean?",
+          "about": "Molecular gastronomy and the science of cooking",
+          "author": {
+            "@type": "Person",
+            "name": "Hervé This"
+          }
+        }
+      }
+    </script>
+
+    <title>Serviap Design Test - Modern Web Components</title>
+  </head>
+  <body>
+    <!-- Skip link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content" class="main-content" role="main">
+      <!-- Gallery Section -->
+      <section class="gallery-container" aria-labelledby="gallery-heading">
+        <div class="images" role="region" aria-label="Gallery images">
+          <img
+            src="./images/gallery.webp"
+            alt="Cooking preparation with molecular gastronomy techniques, showing precise measurement and scientific approach to culinary arts"
+            tabindex="0"
+            role="button"
+            aria-describedby="gallery-description"
+            data-full-src="./images/gallery.webp"
+          />
+          <img
+            src="./images/gallery2.webp"
+            alt="Close-up of perfectly cooked egg demonstrating temperature control in molecular gastronomy"
+            tabindex="0"
+            role="button"
+            aria-describedby="gallery-description"
+            data-full-src="./images/gallery2.webp"
+          />
+          <img
+            src="./images/gallery3.webp"
+            alt="Scientific cooking equipment and ingredients arranged for molecular gastronomy experiments"
+            tabindex="0"
+            role="button"
+            aria-describedby="gallery-description"
+            data-full-src="./images/gallery3.webp"
+          />
+        </div>
+        <div class="text">
+          <header class="headline">
+            <h1 id="gallery-heading" class="title">WHAT DOES COOKING MEAN?</h1>
+          </header>
+          <p id="gallery-description" class="description">
+            Is it simply applying heat to a food product? A way of making
+            certain food safe to eat? Or a way to create flavour and make food
+            more appealing? This is just part of what Hervé This, the father of
+            molecular gastronomy, has dedicated his life to finding out. We
+            spoke to him to find out what his experiments have told him. And in
+            the process even discovered the secret to cooking the perfect egg...
+          </p>
+          <h2 class="subtitle">THE PERFECT EGG</h2>
+          <p class="additional-info">
+            Keep water between 67 and 68°C for a flavourful, tender yolk
+          </p>
+        </div>
+      </section>
+
+      <!-- Cards Section -->
+      <section class="cards-container" aria-labelledby="cards-heading">
+        <div class="content">
+          <header class="headline">
+            <h2 id="cards-heading" class="title">TASTE THE COLOURS</h2>
+          </header>
+          <div
+            class="card-list"
+            role="region"
+            aria-label="Color and taste perception cards"
+          >
+            <article class="card">
+              <a
+                href="#red-taste"
+                class="card-link"
+                aria-describedby="red-description"
+              >
+                <img
+                  src="./images/card.webp"
+                  alt="Red colored food items representing sweet taste perception"
+                  class="image"
+                />
+                <div class="card-text">
+                  <h3 class="card-title">RED</h3>
+                  <p id="red-description" class="card-description">
+                    Red foods remind us of berries and soft fruits, so we
+                    anticipate a sweet taste.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="card">
+              <a
+                href="#green-taste"
+                class="card-link"
+                aria-describedby="green-description"
+              >
+                <img
+                  src="./images/card2.webp"
+                  alt="Green colored food items representing sour taste perception"
+                  class="image"
+                />
+                <div class="card-text">
+                  <h3 class="card-title">GREEN</h3>
+                  <p id="green-description" class="card-description">
+                    Fresh, zingy green colours are reminiscent of unripe fruit,
+                    promising sour or acid flavours
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="card">
+              <a
+                href="#white-taste"
+                class="card-link"
+                aria-describedby="white-description"
+              >
+                <img
+                  src="./images/card3.webp"
+                  alt="White colored food items representing salty taste perception"
+                  class="image"
+                />
+                <div class="card-text">
+                  <h3 class="card-title">WHITE</h3>
+                  <p id="white-description" class="card-description">
+                    White foods evoke memories of salt and salty flavours,
+                    driving the expectation of a savoury treat.
+                  </p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Gallery Modal -->
+    <div
+      id="gallery-modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close image modal">
+          &times;
+        </button>
+        <img id="modal-image" class="modal-image" src="" alt="" />
+        <div id="modal-title" class="sr-only">Enlarged gallery image</div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Serviap Design Test - Modern Web Components",
+  "short_name": "Serviap Design",
+  "description": "A modern, accessible webpage featuring responsive gallery and interactive cards components about molecular gastronomy and taste perception.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101414",
+  "theme_color": "#101414",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["design", "education", "food"],
+  "lang": "en",
+  "dir": "ltr"
+}

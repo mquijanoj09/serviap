@@ -1,0 +1,37 @@
+{
+  "name": "serviap-design-test",
+  "version": "1.0.0",
+  "description": "A production-quality webpage with gallery and cards components",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "npm run build:css && npm run copy:assets",
+    "build:css": "postcss src/css/main.css -o dist/css/main.css --config postcss.config.js",
+    "copy:assets": "cp -r src/images dist/ && cp src/index.html dist/ && cp -r src/js dist/ && cp src/favicon.svg dist/ && cp src/robots.txt dist/ && cp src/sitemap.xml dist/ && cp src/manifest.json dist/",
+    "dev": "npm run build && live-server dist --port=3000",
+    "watch": "npm run build && concurrently \"npm run watch:css\" \"npm run watch:files\" \"live-server dist --port=3000\"",
+    "watch:css": "postcss src/css/main.css -o dist/css/main.css --config postcss.config.js --watch",
+    "watch:files": "nodemon --watch src --ext html,js --exec \"npm run copy:assets\"",
+    "clean": "rm -rf dist && mkdir -p dist/css",
+    "prebuild": "npm run clean"
+  },
+  "keywords": [
+    "responsive",
+    "accessibility",
+    "seo",
+    "gallery",
+    "cards"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "cssnano": "^6.0.1",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1"
+  }
+}
